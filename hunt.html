@@ -377,6 +377,36 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
       <div class="crm-convo-r"><span class="badge accent">SMS</span><span class="crm-time">Aug 27</span></div>
     </div>
   </div>
+
+  <div class="sh" style="margin-top:38px"><h2>Messages that send themselves</h2><span class="n">Texts and emails, on autopilot</span></div>
+  <div class="sd">Every lead gets an instant reply, every finished job gets a review ask. You approve the voice once, then it runs.</div>
+
+  <div class="grid2 am-grid">
+    <div class="card am-seq">
+      <div class="am-head"><span class="am-name">New lead instant reply</span><span class="badge accent">Instant</span></div>
+      <div class="am-when">Fires within 2 minutes of any form, call, or Google message.</div>
+      <div class="am-sms">Hi Dana, this is Hunt Roofing & Contracting. We got your message about the hail damage and can take a look this week. Does Wednesday or Thursday morning work for a free inspection? Hunt Roofing & Contracting</div>
+    </div>
+    <div class="card am-seq">
+      <div class="am-head"><span class="am-name">Estimate follow-up</span><span class="badge warn">Day 3 and 7</span></div>
+      <div class="am-when">Runs until they answer, stops the moment they reply.</div>
+      <div class="am-sms">Hi Janet, just checking in on the estimate we sent over for the shingle replacement. No rush at all. Is there anything in it you would like us to walk through? Hunt Roofing & Contracting</div>
+    </div>
+    <div class="card am-seq">
+      <div class="am-head"><span class="am-name">Review request</span><span class="badge ok">After paid job</span></div>
+      <div class="am-when">Goes out the day a job is marked paid.</div>
+      <div class="am-sms">Thanks again for trusting us with your roof, Marcus. If you were happy with the crew, a quick Google review would mean a lot to our small team: [your Google review link]. Hunt Roofing & Contracting</div>
+    </div>
+    <div class="card am-seq">
+      <div class="am-head"><span class="am-name">Referral ask</span><span class="badge">30 days after</span></div>
+      <div class="am-when">One month after the job, once the roof has proven itself.</div>
+      <div class="am-email">
+        <div class="am-email-h"><span>From: Hunt Roofing & Contracting</span><span>Subject: Know anyone who needs a roofer?</span></div>
+        <div class="am-email-b">Hi Marcus, it has been about a month since we finished your roof, and we hope it has been holding up perfectly through the weather. If a friend or neighbor in Cleburne ever needs an honest opinion on their roof, the Hunt team would be glad to take care of them the same way we took care of you. Just pass along our name or have them reach out through our contact page. Thanks for being a great customer.</div>
+      </div>
+    </div>
+  </div>
+  <div class="crm-honest am-note">Every message is written in your voice and you approve the templates before anything sends. Replies land back in the inbox above and stop the sequence.</div>
 </section>
 
 <style>
@@ -418,6 +448,20 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 #view-crm .crm-convo-s{font-size:.8rem;color:var(--t2);margin-top:4px;line-height:1.5}
 #view-crm .crm-convo-r{display:flex;flex-direction:column;align-items:flex-end;gap:5px;
   flex:0 0 auto}
+
+#view-crm .am-grid{margin-top:4px}
+#view-crm .am-seq{padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+#view-crm .am-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+#view-crm .am-name{font-size:.92rem;font-weight:700}
+#view-crm .am-when{font-size:.76rem;color:var(--t2);line-height:1.45}
+#view-crm .am-sms{background:var(--surface-2);border:1px solid var(--border);
+  border-radius:16px 16px 16px 4px;padding:11px 14px;font-size:.8rem;line-height:1.55;
+  color:var(--t1);max-width:92%;margin-top:2px}
+#view-crm .am-email{border:1px solid var(--border);border-radius:var(--r-sm);overflow:hidden;margin-top:2px}
+#view-crm .am-email-h{display:flex;flex-direction:column;gap:2px;background:var(--surface-2);
+  border-bottom:1px solid var(--border);padding:8px 12px;font-size:.72rem;font-weight:650;color:var(--t2)}
+#view-crm .am-email-b{padding:11px 12px;font-size:.78rem;line-height:1.55;color:var(--t1)}
+#view-crm .am-note{margin-top:14px}
 </style>
 <section class="view" id="view-leads">
   <div class="vh">
